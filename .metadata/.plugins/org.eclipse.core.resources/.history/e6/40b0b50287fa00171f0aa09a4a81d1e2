@@ -1,0 +1,9 @@
+package edu.fju.exam;
+
+public class Main2 {
+	private String name;
+	
+	public void employees(){
+		
+	}
+}

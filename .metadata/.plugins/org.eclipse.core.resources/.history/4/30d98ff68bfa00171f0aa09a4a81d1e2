@@ -1,0 +1,67 @@
+package edu.fju.exam;
+import java.util.*;
+public class VendingMachine {
+
+	public static void main(String[] args) {
+		int money = 0;
+		System.out.println("目前金額:"+money);
+		System.out.println("請輸入投幣金額:");
+		Scanner scanner = new Scanner(System.in);
+		
+//		while(true){
+//			if(sc1 == 1||sc1 == 5 ||sc1 == 10){
+//					
+//			}else{
+//				System.out.println("coin does not exsist");
+//				break;
+//			}
+//		}
+		while(scanner.hasNext()){
+			
+			System.out.println("目前金額:"+money);
+			
+			System.out.println("請輸入投幣金額:");
+			int sc1 = scanner.nextInt();
+		
+			
+			switch(sc1){
+		
+			case 1:
+				money++;
+				break;
+			case 5:
+				money += 5;
+				break;
+			case 10:
+				money += 10;
+				break;
+			default:
+				System.out.println("coin does not exsist");
+				break;
+			}
+			
+			System.out.println("請輸入預購買商品:");
+			String sc2 = scanner.nextLine();
+			
+			if(sc2 == "a"){
+				money -= 10;
+			}else if(sc2 == "b"){
+				
+			}else if(sc2 == "c"){
+				
+			}else if(sc2 == "d"){
+				
+			}else if(sc2 == "e"){
+				
+			}else if(sc2 == "f"){
+				
+			}else if(sc2 == "g"){
+				
+			}else if(sc2 == "h"){
+				
+			}
+		}
+			
+	}
+		
+}

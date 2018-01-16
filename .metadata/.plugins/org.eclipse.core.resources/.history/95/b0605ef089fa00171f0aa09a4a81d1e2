@@ -1,0 +1,35 @@
+package edu.fju.exam;
+import java.util.*;
+public class VendingMachine {
+
+	public static void main(String[] args) {
+		int money = 0;
+		System.out.println("目前金額:"+money);
+		Scanner scanner = new Scanner(System.in);
+		int sc1 = scanner.nextInt();
+//		while(true){
+//			if(sc1 == 1||sc1 == 5 ||sc1 == 10){
+//					
+//			}else{
+//				System.out.println("coin does not exsist");
+//				break;
+//			}
+//		}
+		switch(sc1){
+			case 1:
+				System.out.println("up");
+				
+			case 5:
+				System.out.println("right");
+				break;
+			case 10:
+				System.out.println("left");
+				break;
+			default:
+				System.out.println("coin does not exsist");
+				break;
+			
+		}
+	}
+		
+}
